@@ -3,10 +3,12 @@ html, body {
   height: 100%;
   padding: 0;
   margin: 0;
-  /*change font style to sans serif*/
+  font-family: sans-serif;
 }
 
-  /*change size of h1*/
+  h1 {
+    font-size: 2em;
+  }
 
 .wrap {
   /*height and width controls the size of the sliders*/
@@ -22,9 +24,8 @@ html, body {
 
 /*navigation*/
 header {
-  background: #3E474F;
-  /*reduce intensity of box-shadow*/
-  box-shadow: 0 .5em 1em #111;
+  background: #444;
+  box-shadow: 0 .5em 1em #333;
   position: absolute;
   top: 0;
   left: 0;
@@ -34,13 +35,13 @@ header {
 }
 
 header label {
-  color: #788188;
+  color: #aaa;
   /*change cursor so it looks like a  link:*/
   cursor: pointer;
   display: inline-block;
   line-height: 4.25em;
   /*change font size of nav text*/
-  font-size: .667em;
+  font-size: .78em;
   font-weight: bold;
   padding: 0 1em;
 }
