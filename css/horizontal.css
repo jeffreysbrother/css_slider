@@ -3,33 +3,42 @@ html, body {
   height: 100%;
   padding: 0;
   margin: 0;
+  /*change font style to sans serif*/
 }
 
+  /*change size of h1*/
+
 .wrap {
+  /*height and width controls the size of the sliders*/
   height: 100%;
   width: 100%;
   position: relative;
   overflow: hidden;
   background: #120103;
-  color: white;
+  color: #fff;
   text-align: center;
 }
 
+/*navigation*/
 header {
   background: #3E474F;
+  /*reduce intensity of box-shadow*/
   box-shadow: 0 .5em 1em #111;
   position: absolute;
   top: 0;
   left: 0;
+  /*this ensures that its on top of everything else:*/
   z-index: 900;
   width: 100%;
 }
 
 header label {
   color: #788188;
+  /*change cursor so it looks like a  link:*/
   cursor: pointer;
   display: inline-block;
   line-height: 4.25em;
+  /*change font size of nav text*/
   font-size: .667em;
   font-weight: bold;
   padding: 0 1em;
@@ -55,16 +64,17 @@ header label:hover {
   /*maybe just create new photos in photoshop*/
 }
 
+
+/*each slide has a difference background image*/
 .slide-one { background-image: url('../img/dad_shirley_2.jpg'); }
-
 .slide-two { background-image: url('../img/hannah_skype_mouth.png'); }
-
 .slide-three { background-image: url('../img/meat.png'); }
-
 .slide-four { background-image: url('../img/questions.png'); }
 
+/*move slides onto the screen when the appropriate radio element is checked*/
 [id^="slide"]:checked + .slide {
   left: 0;
+  /*make sure the selected slide is on top of the previous one*/
   z-index: 100;
   transition: left .65s ease-out;
 }
