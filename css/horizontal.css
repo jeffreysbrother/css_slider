@@ -16,6 +16,7 @@ html, body {
   overflow: hidden;
   background: #120103;
   color: #fff;
+  /*maybe make the h1 tag and the navigation centered...but add some content that's not centered*/
   text-align: center;
 }
 
@@ -90,3 +91,5 @@ header label:hover {
   transform: translateY(0);
   transition: all .5s .5s;
 }
+
+/*how to change the focus of the zoomed image when browser window is resized*/
