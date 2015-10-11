@@ -67,10 +67,10 @@ header label:hover {
 
 
 /*each slide has a difference background image*/
-.slide-one { background-image: url('../img/dad_shirley_2.jpg'); }
-.slide-two { background-image: url('../img/hannah_skype_mouth.png'); }
-.slide-three { background-image: url('../img/meat.png'); }
-.slide-four { background-image: url('../img/questions.png'); }
+.slide-one { background-image: url('../img/bang_bug.jpg'); }
+.slide-two { background-image: url('../img/board_walk_sunny.jpg'); }
+.slide-three { background-image: url('../img/broken_tree.jpg'); }
+.slide-four { background-image: url('../img/single_bird.jpg'); }
 
 /*move slides onto the screen when the appropriate radio element is checked*/
 [id^="slide"]:checked + .slide {
