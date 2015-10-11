@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/jeffreysbrother/css_slider/issues"
   },
-  "homepage": "https://github.com/jeffreysbrother/css_slider#readme"
+  "homepage": "https://github.com/jeffreysbrother/css_slider#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  }
 }
