@@ -8,4 +8,4 @@ Besides small modifications, I've made the following additions:
 3. the Grunt plugin "grunt-contrib-imagemin"
 4. a new directory into which the compressed images will be generated
 
-*request*: If anyone knows why this README file is not displaying the ordered list above properly, please let me know!
+**request**: If anyone knows why this README file is not displaying the ordered list above properly, please let me know!
