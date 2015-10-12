@@ -1,30 +1,29 @@
 module.exports = function(grunt) {
 
+
+  //additional plugin installed:
+  var mozjpeg = require('imagemin-mozjpeg');
+
   //project configuration
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
     imagemin: {
-        jpg: {
+      jpg: {
         options: {
-          optimizationLevel: 5,
-          progressive: true
+          progressive: true,
+          use: [mozjpeg()],
+          quality: 10
         },
-        files: [
-          {
-            // Set to true to enable the following options…
+        files: [{
             expand: true,
-            // cwd is 'current working directory'
             cwd: 'img/',
-            src: ['**/*.jpg'],
-            // Could also match cwd. i.e. project-directory/img/
-            dest: 'img/compressed/',
-            ext: '.jpg'
-          }
-        ]
-        }
+            src: ['**/*.{png,jpg,gif}'],
+            dest: 'img/compressed/'
+        }]
       }
-
+    }
+    
   });
 
   //load the plugin that provides the 'uglify' task
